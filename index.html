@@ -1,62 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Poster Wala</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{margin:0;font-family:Arial;background:#f4f4f4;}
-header{background:#ff5722;color:white;padding:40px;text-align:center;}
-section{padding:30px;}
-.plan{background:white;padding:20px;margin:15px;border-radius:10px;box-shadow:0 0 10px #ccc;}
-.btn{background:#ff5722;color:white;padding:12px 20px;border:none;border-radius:5px;font-size:16px;}
-input,textarea{width:100%;padding:10px;margin:10px 0;}
-footer{background:#222;color:white;padding:20px;text-align:center;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poster Wala</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Background Gradient Animation */
+    body {
+      background: linear-gradient(135deg, #000000, #111111, #1c1c1c);
+      background-size: 400% 400%;
+      animation: gradientShift 20s ease infinite;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Fade-in animation */
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* Hero Carousel */
+    .carousel { position: relative; overflow: hidden; border-radius: 1rem; }
+    .carousel-images { display: flex; transition: transform 1s ease-in-out; }
+    .carousel img { min-width: 100%; height: auto; object-fit: cover; }
+  </style>
 </head>
+<body class="text-white font-sans">
 
-<body>
+  <!-- Hero Section with Logo, Festival Table + Carousel -->
+  <section class="text-center py-16 px-4 fade-in">
+    
+    <!-- Logo Image -->
+    <div class="mb-6">
+      <img src="https://via.placeholder.com/200x80/FFFFFF/000000?text=Logo" alt="Poster Wala Logo" class="mx-auto">
+    </div>
 
-<header>
-<h1>Poster Wala</h1>
-<p>Ready-to-Post Festival & Business Canva Designs</p>
-</header>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Your Brand’s Voice, Celebrated Digitally</h1>
+    <p class="text-lg md:text-2xl mb-8 text-gray-300">Premium festival templates tailored for your business. Fast, elegant, and ready to post.</p>
 
-<section>
-<h2>Why Poster Wala?</h2>
-<p>We help Indian businesses look professional on Instagram & WhatsApp using beautiful Canva templates.</p>
-</section>
+    <!-- Festival Showcase Table -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+      <div class="bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+        <img src="https://via.placeholder.com/150x80/FFFFFF/000000?text=Logo+1" alt="Company Logo" class="mx-auto mb-2">
+        <h3 class="text-white font-bold text-xl">Holi</h3>
+        <p class="text-gray-400 text-sm mt-1">Festive social media templates for your business.</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+        <img src="https://via.placeholder.com/150x80/FFFFFF/000000?text=Logo+2" alt="Company Logo" class="mx-auto mb-2">
+        <h3 class="text-white font-bold text-xl">Navratri</h3>
+        <p class="text-gray-400 text-sm mt-1">Brand-themed templates to celebrate Garba & Dandiya.</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+        <img src="https://via.placeholder.com/150x80/FFFFFF/000000?text=Logo+3" alt="Company Logo" class="mx-auto mb-2">
+        <h3 class="text-white font-bold text-xl">Deepavali</h3>
+        <p class="text-gray-400 text-sm mt-1">Bright Diwali templates to light up your business page.</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+        <img src="https://via.placeholder.com/150x80/FFFFFF/000000?text=Logo+4" alt="Company Logo" class="mx-auto mb-2">
+        <h3 class="text-white font-bold text-xl">Eid</h3>
+        <p class="text-gray-400 text-sm mt-1">Elegant Eid templates to celebrate with your audience.</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+        <img src="https://via.placeholder.com/150x80/FFFFFF/000000?text=Logo+5" alt="Company Logo" class="mx-auto mb-2">
+        <h3 class="text-white font-bold text-xl">Christmas</h3>
+        <p class="text-gray-400 text-sm mt-1">Festive Christmas templates for your brand.</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+        <img src="https://via.placeholder.com/150x80/FFFFFF/000000?text=Logo+6" alt="Company Logo" class="mx-auto mb-2">
+        <h3 class="text-white font-bold text-xl">Ganesh Chaturthi</h3>
+        <p class="text-gray-400 text-sm mt-1">Colorful Ganesha festival templates for your business.</p>
+      </div>
+    </div>
 
-<section>
-<h2>Our Plans</h2>
+    <!-- Hero Carousel of Work -->
+    <div class="carousel max-w-4xl mx-auto mb-8">
+      <div class="carousel-images">
+        <img src="https://via.placeholder.com/800x400/111111/FFFFFF?text=Poster+1" alt="Poster 1">
+        <img src="https://via.placeholder.com/800x400/111111/FFFFFF?text=Poster+2" alt="Poster 2">
+        <img src="https://via.placeholder.com/800x400/111111/FFFFFF?text=Poster+3" alt="Poster 3">
+      </div>
+    </div>
 
-<div class="plan">
-<h3>Basic – ₹499/month</h3>
-<p>30 Festival Designs<br>30 Daily Posts<br>Business Name & Logo<br>WhatsApp Delivery</p>
-</div>
+    <a href="#order-form" class="bg-white text-black px-6 py-3 rounded-md font-semibold hover:shadow-lg hover:scale-105 transition transform">Start Designing</a>
+  </section>
 
-<div class="plan">
-<h3>Standard – ₹999/month</h3>
-<p>60 Festival Designs<br>60 Daily Posts<br>Custom Brand Colors<br>Your Phone on Posters<br>Priority Support</p>
-</div>
-</section>
+  <!-- Pricing Section -->
+  <section class="py-16 px-4 fade-in" id="plans">
+    <h2 class="text-3xl font-bold text-center mb-12 text-white">Choose Your Plan</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-<section>
-<h2>Get Your Designs</h2>
+      <!-- Basic Plan -->
+      <div class="bg-gray-900 p-6 rounded-xl shadow-lg flex flex-col items-center transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl hover:ring-2 hover:ring-white">
+        <h3 class="text-2xl font-bold mb-4">Basic</h3>
+        <p class="text-white text-xl font-semibold mb-4">₹499 / $6</p>
+        <ul class="mb-6 text-gray-300 space-y-2">
+          <li>3 Static Templates</li>
+          <li>1 Revision</li>
+          <li>Standard Logo Placement</li>
+          <li>Delivery in 48 Hours</li>
+        </ul>
+      </div>
 
-<form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
-<input type="text" name="Business Name" placeholder="Business Name" required>
-<input type="text" name="Owner Name" placeholder="Your Name" required>
-<input type="tel" name="Phone" placeholder="Phone Number" required>
-<textarea name="Business Type" placeholder="What is your business?" required></textarea>
-<button class="btn">Submit</button>
-</form>
+      <!-- Standard Plan -->
+      <div class="bg-gray-900 p-6 rounded-xl shadow-lg flex flex-col items-center transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl hover:ring-2 hover:ring-white animate-pulse">
+        <h3 class="text-2xl font-bold mb-4">Standard</h3>
+        <p class="text-white text-xl font-semibold mb-4">₹999 / $12</p>
+        <ul class="mb-6 text-gray-300 space-y-2">
+          <li>5 Static + 1 Motion Video</li>
+          <li>Unlimited Revisions</li>
+          <li>Custom Brand Integration</li>
+          <li>Priority Delivery 24 Hours</li>
+        </ul>
+      </div>
 
-</section>
+      <!-- Premium Plan -->
+      <div class="bg-gray-900 p-6 rounded-xl shadow-lg flex flex-col items-center transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl hover:ring-2 hover:ring-white">
+        <h3 class="text-2xl font-bold mb-4">Premium</h3>
+        <p class="text-white text-xl font-semibold mb-4">₹1499 / $18</p>
+        <ul class="mb-6 text-gray-300 space-y-2">
+          <li>All Standard Features + Extra 3 Templates</li>
+          <li>Unlimited Revisions</li>
+          <li>Dedicated Designer Support</li>
+          <li>Delivery in 12 Hours</li>
+        </ul>
+      </div>
 
-<footer>
-<p>Poster W © 2026</p>
-<p>WhatsApp: +91 8780142739 </p>
-</footer>
+    </div>
+  </section>
+
+  <!-- Order Form -->
+  <section id="order-form" class="py-16 px-4 max-w-3xl mx-auto fade-in">
+    <h2 class="text-3xl font-bold text-center mb-8 text-white">Place Your Order</h2>
+    <form id="posterForm" class="bg-gray-900 p-8 rounded-xl shadow-lg space-y-4">
+      
+      <input type="text" name="name" placeholder="Full Name" required
+        class="w-full p-3 rounded-md bg-gray-800 text-white focus:outline-white">
+        
+      <input type="text" name="business" placeholder="Business Name" required
+        class="w-full p-3 rounded-md bg-gray-800 text-white focus:outline-white">
+        
+      <select name="plan" required class="w-full p-3 rounded-md bg-gray-800 text-white focus:outline-white">
+        <option value="">Select Plan</option>
+        <option value="Basic">Basic</option>
+        <option value="Standard">Standard</option>
+        <option value="Premium">Premium</option>
+      </select>
+
+      <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required
+        class="w-full p-3 rounded-md bg-gray-800 text-white focus:outline-white">
+      
+      <input type="file" name="logo" accept="image/*"
+        class="w-full p-3 rounded-md bg-gray-800 text-white focus:outline-white">
+
+      <button type="submit" class="w-full bg-white text-black p-3 rounded-md font-bold hover:shadow-lg hover:scale-105 transition transform">Submit Order</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-gray-400 text-sm">
+    &copy; 2026 Poster Wala | Made with 💛 by Mithra
+  </footer>
+
+  <script>
+    // Scroll Fade-In
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2 };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, appearOptions);
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
+
+    // WhatsApp Form Submission
+    const form = document.getElementById('posterForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = new FormData(form);
+      const message = `Hi! My name is ${data.get('name')}, Business: ${data.get('business')}, Plan: ${data.get('plan')}.`;
+      const whatsappUrl = `https://wa.me/${data.get('whatsapp')}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+      alert('Redirecting to WhatsApp to confirm your order!');
+      form.reset();
+    });
+
+    // Hero Carousel
+    const carousel = document.querySelector('.carousel-images');
+    let index = 0;
+    setInterval(() => {
+      index++;
+      if(index >= carousel.children.length) index = 0;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }, 4000);
+  </script>
 
 </body>
 </html>
